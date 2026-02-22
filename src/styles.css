@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #1e2a44, #2a4066, #4b2e5a);
+    animation: neonGradient 12s ease infinite;
+    background-size: 200% 200%;
+}
+@keyframes neonGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(30, 42, 68, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    color: #00e6e6;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.4);
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tagline {
+    font-size: 1.2em;
+    color: #b0b0ff;
+    margin-bottom: 40px;
+    text-shadow: 0 0 5px rgba(176, 176, 255, 0.5);
+}
+.features, .download, .installation, .eula, .about {
+    margin: 40px 0;
+    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 8px;
+}
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8em;
+    color: #ff66cc;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(255, 102, 204, 0.6);
+}
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #d0d0ff;
+}
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.download-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #00e6e6, #ff66cc);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    animation: pulse 2s ease infinite;
+}
+.download-button:hover {
+    background: linear-gradient(45deg, #00b3b3, #cc3399);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 0 0 40px rgba(255, 102, 204, 0.4);
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 15px rgba(0, 255, 255, 0.4); }
+    50% { box-shadow: 0 0 25px rgba(0, 255, 255, 0.6); }
+    100% { box-shadow: 0 0 15px rgba(0, 255, 255, 0.4); }
+}
+.installation ol {
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #d0d0ff;
+}
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #b0b0ff;
+    text-shadow: 0 0 5px rgba(176, 176, 255, 0.5);
+}
+footer a {
+    color: #00e6e6;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+.language-button {
+    padding: 8px 16px;
+    background: linear-gradient(45deg, #00e6e6, #ff66cc);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.language-button:hover {
+    background: linear-gradient(45deg, #00b3b3, #cc3399);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+.language-button.active {
+    background: linear-gradient(45deg, #00b3b3, #cc3399);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+.nav-button {
+    padding: 8px 16px;
+    background: linear-gradient(45deg, #00e6e6, #ff66cc);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav-button:hover {
+    background: linear-gradient(45deg, #00b3b3, #cc3399);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
