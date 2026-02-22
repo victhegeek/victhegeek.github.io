@@ -15,7 +15,7 @@ PinSnippet is a plugin for IntelliJ IDEA-based IDEs that allows you to save, man
 
 ## Download
 
-Download the plugin from the [official page](https://VicSergeev.github.io/).
+Download the plugin from the [official page](https://victhegeek.github.io/).
 
 Choose the version compatible with your IDE:
 
