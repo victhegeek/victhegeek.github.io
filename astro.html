@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Session Watcher - Astrophotography Tool</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">VicTheGeek</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="astronomy.html">Astronomy</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="language-button" data-lang="en">EN</button>
+                <button class="language-button" data-lang="ru">RU</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project-page">
+        <div class="container">
+
+            <h1>🔭 Astro Session Watcher (Freeware)</h1>
+            <p class="project-tagline">Automatically track, sort, and log your astrophotography sessions</p>
+
+            <div class="screenshot-placeholder full-width">
+                <div class="placeholder-content">
+                    <p>Screenshot: Astro Session Watcher main interface</p>
+                    <img src="src/1.png" alt="ASW" class="icon">
+                </div>
+            </div>
+
+            <section class="project-description">
+                <h2>📸 What is it for?</h2>
+                <ul>
+                    <li>Automatically distribute shots into target folders</li>
+                    <li>Keep a log of each session</li>
+                    <li>Don't miss a single frame when changing targets</li>
+                    <li>Store equipment and celestial bodies history</li>
+                </ul>
+            </section>
+
+            <section class="project-description">
+                <h2>🚀 How it works?</h2>
+                <ol>
+                    <li>Select the folder where your camera saves photos</li>
+                    <li>The app creates a session folder: <code>AstroSession_YYYY-MM-DD</code></li>
+                    <li>Each target gets its own subfolder inside the session folder</li>
+                    <li>When you change target (press "New Target"), all accumulated files are moved</li>
+                    <li>When you end the session, remaining files are moved to the last target</li>
+                </ol>
+            </section>
+
+            <section class="project-description">
+                <h2>⌨️ Hotkeys</h2>
+                <table class="hotkeys-table">
+                    <tr><td><kbd>Ctrl+O</kbd></td><td>Select watch folder</td></tr>
+                    <tr><td><kbd>Ctrl+E</kbd></td><td>Equipment management</td></tr>
+                    <tr><td><kbd>Ctrl+B</kbd></td><td>Celestial bodies management</td></tr>
+                    <tr><td><kbd>Ctrl+S</kbd></td><td>Start session</td></tr>
+                    <tr><td><kbd>Ctrl+X</kbd></td><td>Stop session</td></tr>
+                    <tr><td><kbd>Ctrl+F</kbd></td><td>Open current session folder</td></tr>
+                    <tr><td><kbd>Ctrl+Shift+N</kbd></td><td>Create new target</td></tr>
+                    <tr><td><kbd>F1</kbd></td><td>About</td></tr>
+                    <tr><td><kbd>F2</kbd></td><td>Show instructions</td></tr>
+                </table>
+            </section>
+
+            <section class="project-description">
+                <h2>🔧 Config Files</h2>
+                <ul>
+                    <li><code>astro_settings.json</code> ← cameras, lenses, last folder</li>
+                    <li><code>celestial_bodies.json</code> ← list of celestial bodies</li>
+                </ul>
+                <p>All files are stored in the program folder. You can edit them manually.</p>
+            </section>
+
+            <!-- Исправленный блок Download - теперь текст свой и выравнивание по центру -->
+            <section class="download download-centered">
+                <h2>Download</h2>
+                <p>Application now in alpha stage, there might be malfunctions:</p>
+                <div class="download-buttons">
+                    <a href="downloads/ASW-v.0.4.0-alpha.zip" class="download-button">Astro Session Watcher v0.4.0 (Alpha)</a>
+                    <p class="download-note">Windows 10/11</p>
+                </div>
+            </section>
+
+            <div class="back-link">
+                <a href="index.html">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-centered">
+        <p>Developed by <a href="https://github.com/VicTheGeek">Vic Sergeev</a> | Free to use</p>
+    </footer>
+
+    <script src="src/localization.js"></script>
+</body>
+</html>
