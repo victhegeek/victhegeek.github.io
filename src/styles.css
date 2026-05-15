@@ -156,3 +156,369 @@ footer a:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
+/* Navbar styles */
+.navbar {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0db4f;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f0db4f;
+}
+
+/* Landing page */
+.landing {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    border-radius: 20px;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Projects grid */
+.featured-projects h2, .projects-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.full-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project-card {
+    background: #1e1e2e;
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #333;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-color: #f0db4f;
+}
+
+.project-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #f0db4f;
+}
+
+.project-tags {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    background: #333;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.project-link {
+    color: #f0db4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Screenshot placeholder */
+.screenshot-placeholder {
+    background: linear-gradient(135deg, #2a2a3e, #1a1a2e);
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: 2px dashed #f0db4f;
+}
+
+.placeholder-content .placeholder-icon {
+    font-size: 4rem;
+    display: block;
+}
+
+.placeholder-content em {
+    color: #888;
+}
+
+/* Hotkeys table */
+.hotkeys-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e1e2e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hotkeys-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.hotkeys-table tr:last-child td {
+    border-bottom: none;
+}
+
+.hotkeys-table td:first-child {
+    font-weight: bold;
+    color: #f0db4f;
+    width: 150px;
+}
+
+kbd {
+    background: #2d2d3d;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    border: 1px solid #555;
+}
+
+/* Back link */
+.back-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.back-link a {
+    color: #f0db4f;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Centered download section */
+.download-centered {
+    text-align: center;
+}
+
+.download-centered .download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0db4f, #e6c300);
+    color: #1a1a2e;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(240, 219, 79, 0.3);
+}
+
+.download-note {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Footer fixes */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.footer-centered {
+    text-align: center;
+    padding: 1.5rem;
+    background: #1a1a2e;
+    margin-top: 2rem;
+}
+
+.footer-centered p {
+    margin: 0;
+}
+
+/* Container centering */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Full width screenshot */
+.screenshot-placeholder.full-width {
+    width: 100%;
+    padding: 0;
+    background: #1a1a2e;
+    border: 2px dashed #f0db4f;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.screenshot-placeholder.full-width .placeholder-content {
+    padding: 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, #2a2a3e, #1a1a2e);
+}
+
+/* А если вы добавите реальное изображение, то используйте это: */
+.screenshot-placeholder.full-width img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Убираем внутренние отступы у контейнера для картинки */
+.screenshot-placeholder.full-width.has-image {
+    padding: 0;
+    border: none;
+}
+
+.screenshot-placeholder.full-width.has-image .placeholder-content {
+    padding: 0;
+    background: transparent;
+}
+/* Hero avatar - круглая, по центру */
+.hero-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border: 4px solid #f0db4f;
+    box-shadow: 0 0 20px rgba(240, 219, 79, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-avatar:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(240, 219, 79, 0.5);
+}
+
+/* Для мобильных устройств - чуть меньше аватарка */
+@media (max-width: 768px) {
+    .hero-avatar {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* Стили для меток лицензий */
+.license-tag {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    margin-left: 0.25rem;
+}
+
+.license-tag.freeware {
+    background-color: #2c5f2d; /* Темно-зеленый */
+    color: #ffffff;
+}
+
+.license-tag.opensource {
+    background-color: #1e3a8a; /* Темно-синий */
+    color: #ffffff;
+    border: 1px solid #3b82f6;
+}
+
+/* Небольшой апдейт для контейнера тегов, чтобы метки не переносились */
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
